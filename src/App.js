@@ -1,7 +1,14 @@
 import React from "react";
+import "./App.css";
+
+import { Navbar, Header } from "./components";
 
 const App = () => {
-  return <h1>test</h1>;
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  );
 };
 
 export default App;

@@ -1,0 +1,24 @@
+nav {
+  padding-top: 15px;
+  /* border: 2px solid var(--custom-white); */
+}
+
+#nav--ul {
+  list-style-type: none;
+  display: flex;
+  gap: 4%;
+}
+
+#nav--ul li {
+  color: var(--custom-white);
+  font-size: 1.1em;
+}
+
+#nav--ul:first-child {
+  padding-left: 8%;
+}
+
+#contact {
+  margin-left: auto;
+  padding-right: 8%;
+}

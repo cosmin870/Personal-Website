@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  font-size: 16px;
+  --font-family: Poppins, sans-serif;
+  --gradient-left: radial-gradient(
+    circle at 22% 62%,
+    rgba(110, 49, 82, 1) 0%,
+    rgba(24, 31, 60, 1) 83%
+  );
+  --gradient-right: radial-gradient(
+    circle at 92% 81%,
+    rgba(110, 49, 82, 1) 0%,
+    rgba(24, 31, 60, 1) 83%
+  );
+  --gradient-center: radial-gradient(
+    circle at 50% 76%,
+    rgba(110, 49, 82, 1) 0%,
+    rgba(24, 31, 60, 1) 83%
+  );
+  --bg: url(./assets/Sprinkle.svg);
+  --neon-yellow: #fff01f;
+  --custom-orange: #f14c41;
+  --custom-purple: #673051;
+  --custom-white: #f8f9fa;
+  --old-yellow: #f9d72d;
+}
