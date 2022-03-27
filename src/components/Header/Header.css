@@ -15,18 +15,17 @@ header {
   font-weight: 700;
 }
 
-.title--ul li {
+/* .title--ul li {
   text-shadow: 0 0 10px var(--neon-yellow);
-}
+} */
 
 .main--img {
   position: relative;
   height: 80%;
   width: 45%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   z-index: 1;
-  animation: 4s linear infinite float;
+  animation: 5s linear infinite float;
 }
 
 @keyframes float {
@@ -36,10 +35,50 @@ header {
 
   50% {
     transform: translateY(3%);
-    transform: translateX(1%);
   }
 
   100% {
     transform: translateY(-1%);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .title--container {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .title--ul {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 8%;
+  }
+
+  .main--img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .main--img {
+    margin-top: 15%;
+  }
+
+  .title--container {
+    padding: 0;
+  }
+  .title--ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title--ul {
+    font-size: 2.6rem;
   }
 }

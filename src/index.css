@@ -18,7 +18,7 @@
     rgba(110, 49, 82, 1) 0%,
     rgba(24, 31, 60, 1) 83%
   );
-  --bg: url(./assets/Sprinkle.svg);
+  --bg: url(./images/Sprinkle.svg);
   --neon-yellow: #fff01f;
   --custom-orange: #f14c41;
   --custom-purple: #673051;
