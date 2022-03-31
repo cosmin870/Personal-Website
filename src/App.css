@@ -3,10 +3,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: var(--font-family);
+  font-family: var(--font-1);
 }
 
-.App {
+body {
   background-size: cover;
   background-image: var(--bg);
 }

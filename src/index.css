@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Overpass:wght@300;400;600;800&family=Sanchez&display=swap");
 
 :root {
   font-size: 16px;
-  --font-family: Poppins, sans-serif;
+  --font-1: Nunito, Arial;
+  --font-2: Sanchez, Arial;
+  --font-3: Overpass, Arial;
   --gradient-left: radial-gradient(
     circle at 22% 62%,
     rgba(110, 49, 82, 1) 0%,
@@ -24,4 +26,88 @@
   --custom-purple: #673051;
   --custom-white: #f8f9fa;
   --old-yellow: #f9d72d;
+  --custom-pink: #d169ccd6;
+}
+
+.fade-in-1 {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s
+    both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+}
+
+.fade-in-2 {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s
+    both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s both;
+}
+.fade-in-3 {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.7s
+    both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.7s both;
+}
+.fade-in-4 {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.2s
+    both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.2s both;
+}
+.fade-in-5 {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.7s
+    both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.7s both;
+}
+
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 1.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0.5s both;
+  animation: fade-in-bottom 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

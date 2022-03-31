@@ -1,5 +1,14 @@
 header {
   height: 100vh;
+  min-height: 400px;
+}
+
+.colored-bar {
+  position: absolute;
+  height: 80vh;
+  width: 0.3em;
+  top: 100px;
+  background-color: var(--custom-pink);
 }
 
 .title--container {
@@ -12,12 +21,12 @@ header {
   list-style: none;
   font-size: 4rem;
   color: var(--neon-yellow);
-  font-weight: 700;
+  font-weight: 800;
 }
 
-/* .title--ul li {
-  text-shadow: 0 0 10px var(--neon-yellow);
-} */
+.title--ul li {
+  padding-top: 10px;
+}
 
 .main--img {
   position: relative;
@@ -25,21 +34,6 @@ header {
   width: 45%;
   margin: auto;
   z-index: 1;
-  animation: 5s linear infinite float;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(-1%);
-  }
-
-  50% {
-    transform: translateY(3%);
-  }
-
-  100% {
-    transform: translateY(-1%);
-  }
 }
 
 @media screen and (max-width: 680px) {
