@@ -26,6 +26,7 @@ header {
 
 .title--ul li {
   padding-top: 10px;
+  text-shadow: 1.5px 1.5px 0 white;
 }
 
 .main--img {

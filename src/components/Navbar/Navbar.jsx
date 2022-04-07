@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <span id="logo">//CosmoWeb</span>
+      <span id="logo">[CosmoWeb]</span>
       <ul id="nav--ul">{displayNavItems}</ul>
 
       {toggle ? (
