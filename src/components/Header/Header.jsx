@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Header.css";
 import Navbar from "../Navbar/Navbar";
 import Scroll from "../Scroll-slider/Scroll";
-
+import Services from "../Services/Services";
 import pic from "../../images/pic.png";
 
 const Header = () => {
+  const scrollRef = useRef(null);
+  const executeScroll = () => scrollRef.current.scrollIntoView();
+
   return (
     <header>
       <Navbar />
@@ -21,7 +24,8 @@ const Header = () => {
         </ul>
         <img src={pic} alt="main image" className="main--img fade-in-bottom " />
       </div>
-      <Scroll />
+      <Scroll executeScroll={executeScroll} />
+      <Services scrollRef={scrollRef} />
     </header>
   );
 };
