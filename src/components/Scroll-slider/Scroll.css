@@ -1,6 +1,7 @@
 .scroll-parent {
   position: relative;
-  top: 60px;
+  /* top: 60px; */
+  top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;

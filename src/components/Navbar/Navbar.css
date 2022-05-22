@@ -29,6 +29,7 @@ nav {
   font-weight: 800;
   letter-spacing: 1px;
   cursor: pointer;
+  z-index: 999;
 }
 
 #nav--ul li:last-child {

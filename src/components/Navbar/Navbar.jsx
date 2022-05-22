@@ -9,7 +9,7 @@ const Navbar = () => {
     setToggle((prevState) => !prevState);
   };
 
-  const navItems = ["HOME", "SERVICES", "CONTACT"];
+  const navItems = ["HOME", "SERVICES", "PROJECTS", "CONTACT"];
 
   const displayNavItemsMobile = navItems.map((item) => (
     <span key={item} className="mobile-menu-elements">

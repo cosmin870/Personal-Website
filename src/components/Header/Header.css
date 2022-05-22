@@ -1,7 +1,15 @@
 header {
   height: 100vh;
-  min-height: 400px;
+  min-height: 60vh;
   overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  display: block;
+  height: 100vh;
+  min-height: 750px;
 }
 
 .colored-bar {
@@ -27,7 +35,7 @@ header {
 
 .title--ul li {
   padding-top: 10px;
-  text-shadow: 1.5px 1.5px 0 white;
+  /* text-shadow: 1px 1px 0 white; */
 }
 
 .main--img {
@@ -62,11 +70,14 @@ header {
 
 @media screen and (max-width: 585px) {
   .main--img {
-    margin-top: 15%;
+    margin-top: 7%;
+    height: 35%;
+    width: 85%;
   }
 
   .title--container {
     padding: 0;
+    /* height: 80vh; */
   }
   .title--ul {
     justify-content: center;
@@ -78,3 +89,40 @@ header {
     font-size: 2.6rem;
   }
 }
+
+@media screen and (min-height: 750px) and (max-height: 1500px) and (max-width: 420px) {
+  .title--container {
+    height: 75vh;
+  }
+
+  .main--img {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-height: 750px) and (max-height: 1500px) and (min-width: 720px) and (max-width: 913px) {
+  .title--container {
+    height: 65vh;
+  }
+
+  .main--img {
+    height: 50%;
+    width: 60%;
+  }
+}
+
+/* @media screen and (min-height: 750px) and (max-height: 1500px) and (max-width: 420px) {
+  .title--container {
+    height: 75%;
+  }
+
+  .title--ul li {
+    font-size: 3.8rem;
+  }
+
+  .main--img {
+    height: 40%;
+    width: 90%;
+  }
+} */

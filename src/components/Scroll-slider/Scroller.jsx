@@ -1,7 +1,7 @@
 import React from "react";
 import "./Scroll.css";
 
-const Scroll = (props) => {
+const Scroller = (props) => {
   return (
     <div className="scroll-parent fade-in-1" onClick={props.executeScroll}>
       <div className="scroll-down-container">
@@ -12,4 +12,4 @@ const Scroll = (props) => {
   );
 };
 
-export default Scroll;
+export default Scroller;

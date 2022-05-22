@@ -12,9 +12,6 @@ const App = () => {
         </video>
         <Header />
       </div>
-      {/* <video loop autoPlay muted>
-        <source src={vid} type="video/mp4" />
-      </video> */}
     </div>
   );
 };
