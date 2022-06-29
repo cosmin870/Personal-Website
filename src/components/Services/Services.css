@@ -49,7 +49,6 @@
   justify-content: center;
   gap: 15px;
   margin-top: 3%;
-  border: 1px solid rgb(0, 247, 230);
 }
 
 .service-item {
@@ -105,12 +104,11 @@
 }
 
 .specialities-container {
-  margin-top: 4%;
+  margin-top: 50px;
   display: block;
   height: 50vh;
   width: 100%;
   color: white;
-  border: 1px solid red;
 }
 
 .spec-title-box {
@@ -137,9 +135,10 @@
 .spec-list-box li {
   font-size: 1.5rem;
   margin-top: 2%;
+  border: 1px solid white;
 }
 
-.spec-list-box li:first-child {
+/* .spec-list-box li:first-child {
   padding-left: 3%;
 }
 
@@ -149,13 +148,12 @@
 
 .spec-list-box li:last-child {
   padding-left: 6%;
-}
+} */
 
 .spec-list-child {
   display: flex;
   align-items: center;
   gap: 2.5%;
-  border: 1px solid royalblue;
 }
 
 .spec-list-child span {
@@ -163,14 +161,75 @@
   transition: letter-spacing 0.2s ease-in-out;
 }
 
-.spec-list-child span:hover {
+/* .spec-list-child span:hover {
   letter-spacing: 2px;
   font-weight: 600;
-}
+} */
 
 .spec-list-child img {
   height: 60px;
   width: 60px;
+}
+
+.spec-animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 70%;
+  bottom: 40%;
+  height: 40px;
+  width: 70px;
+  border: 1px solid red;
+}
+
+.spec-animation-content {
+  position: relative;
+  height: 40px;
+  border: 1px solid rgb(17, 53, 255);
+}
+
+.spec-animation-container::after {
+  content: "}";
+  margin-left: 250%;
+}
+
+.spec-animation-container::before {
+  content: "{";
+  margin-right: 250%;
+}
+
+.spec-animation-content::before {
+  content: "i";
+  animation: services-animation_3848950559 4s linear infinite;
+  transform-origin: 50% 50%;
+  transform: scale();
+}
+@keyframes services-animation_3848950559 {
+  0% {
+    transform: perspective(100px) rotate(0deg);
+  }
+  18.75% {
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  37.5% {
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  56.25% {
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  75% {
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+}
+
+.spec-animation-container::after,
+.spec-animation-container::before,
+.spec-animation-content::before {
+  transform: scale(15, 15);
+  position: absolute;
 }
 
 @media screen and (max-width: 850px) {
@@ -202,6 +261,26 @@
   .spec-title-box {
     width: 80%;
   }
+
+  .spec-title-box h2 {
+    font-size: 1.6em;
+  }
+
+  .spec-list-box li:first-child,
+  .spec-list-box li:nth-child(2),
+  .spec-list-box li:last-child {
+    padding-left: 6%;
+  }
+
+  .spec-list-box li {
+    font-size: 1.1rem;
+    margin-top: 5%;
+  }
+
+  .spec-list-child img {
+    height: unset;
+    width: unset;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -213,5 +292,14 @@
   }
   .item-title {
     width: 50%;
+  }
+
+  .spec-title-box h2 {
+    font-size: 5.4vw;
+  }
+
+  .spec-list-box li {
+    font-size: 1em;
+    margin-top: 25px;
   }
 }

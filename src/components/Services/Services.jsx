@@ -56,6 +56,7 @@ const Services = (props) => {
         <div className="spec-title-box">
           <h2>A Small List Of My Specialties</h2>
         </div>
+
         <div className="spec-list-box">
           <ul>
             <li>
@@ -79,6 +80,10 @@ const Services = (props) => {
               </div>
             </li>
           </ul>
+        </div>
+
+        <div className="spec-animation-container">
+          <div className="spec-animation-content"></div>
         </div>
       </div>
     </div>
